@@ -102,3 +102,16 @@ function weatherFn(){
 
 	},10000)
 }
+
+nextPagefn();
+function nextPagefn(){
+	$('body').on('keydown',function(e){
+		// var e = event || window.event;
+		switch(e.keyCode){
+			case 13:
+				console.log('test')
+				window.location.href = "adminview.html";
+			break;
+		}
+	});
+}
