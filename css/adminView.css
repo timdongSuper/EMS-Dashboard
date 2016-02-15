@@ -1,0 +1,696 @@
+html,body,#wrap{
+    width: 100%;
+    height: 100%;
+    font-family: "Arial";
+    background: #e7ebee;
+}
+
+p{
+    margin:0;
+}
+/*common*/
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.active{
+    border-bottom-color: #0bf26d;
+    color: #0bf26d;
+}
+/*common*/
+
+#wrap{
+}
+
+/*START header*/
+header{
+    position: relative;
+    width: 100%;
+    height: 182px;
+    padding: 0 50px;
+    background: #244259;
+}
+
+header .head-logo{
+    color: #e0e5ee;
+    font-size: 47px;
+    line-height: 53px;
+    margin-top: 30px;
+    font-style: italic;
+}
+
+header .head-date{
+    color: #ffffff;
+    position: absolute;
+    top: 31px;
+    right: 72px;
+}
+header .head-date div{
+    display: inline-block;
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 26px;
+}
+header .head-date div:first-child p{
+    position: relative;
+}
+/*th*/
+header .head-date div:first-child p span{   
+    position: absolute;
+    font-size: 12px;
+    line-height: 12px;
+    padding-left: 4px;
+    top: 3px;
+}
+
+/*PM*/
+header .head-date div:nth-of-type(2) p span{
+    position: absolute;
+    font-size: 12px;
+    line-height: 12px;
+    padding-left: 6px;
+    bottom: 21px;
+}
+
+/*sun/Dec'15  Today*/
+header .head-date div p:nth-of-type(2){
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 1px;
+}
+
+header ul{
+    position: absolute;
+    bottom: 0;
+    color: #aab1b8;
+    margin-bottom:0;
+}
+header ul li{
+    float: left;
+    font-size: 17px;
+    line-height: 19px;
+    margin-right: 46px;
+    padding-bottom: 21px;
+    border-bottom: 4px solid #244259;
+}
+header ul li:hover{
+    color: #ffffff;
+}
+
+/*END header*/
+
+
+
+/*---content---*/
+.content{
+    width: 100%;
+    padding: 0 50px;
+}
+
+/*START cont-mes*/
+.content .cont-mes{
+    width: 100%;
+    padding-bottom: 17px;
+}
+/*DashBoard*/
+.content .cont-mes .con-title{
+    font-size: 35px;
+    line-height: 36px;
+    height: 36px;
+    margin-top: 49px;
+    margin-left: -3px;
+}
+/*wran message: POWER GENERATOR TROUBLES!*/
+.con-wran{
+    position: absolute;
+    top: 0;
+    left: 258px;
+    width: 322px;
+    height: 52px;
+    line-height: 52px;
+    text-align: center;
+    margin-top: 43px;
+    background: url(../i/admin/icon-wran2.png);
+    background-size: 100% 100%;
+
+    display: none;
+}
+.con-wran:after{
+    content: "POWER GENERATOR TROUBLES!";
+    margin-left: 45px;
+    font-size: 14px;
+    line-height: 14px;
+    color: #ffffff;
+}
+
+/*message right*/
+.content .cont-mes .cont-mes-right{
+    padding-top: 38px;
+}
+
+.content .cont-mes .cont-mes-right>div{
+    display: inline-block;
+}
+
+/*cloudy weather*/
+.content .cont-mes .cont-mes-right>div:nth-of-type(1){
+    width: 45px;
+    height: 54px;
+    text-align: center;
+    margin-right: 19px;
+    position: relative;
+    top: 5px;
+}
+/*33 centigrade*/
+.content .cont-mes .cont-mes-right>div:nth-of-type(2){
+    font-size: 60px;
+    line-height: 60px;
+    color: #43aea8;
+}
+.content .cont-mes .cont-mes-right>div:nth-of-type(2) sub{
+    font-size: 24px;
+    bottom: 0;
+    right: -6px;
+}
+
+/*line*/
+.line{
+    width: 1px;
+    height: 44px;
+    background: #cccfd1;
+    margin-right: 22px;
+    margin-left: 13px;
+}
+.cont-mes-right>div:nth-of-type(7){
+    margin-right: 15px;
+    margin-left: 5px;
+}
+
+.mes-info{
+    text-align: center;
+}
+.mes-info>p{
+    font-size: 12px;
+    color: #959595;
+}
+.mes-info>div{
+    font-size: 30px;
+    color: #43aea8;
+}
+.mes-info>div span:nth-of-type(2){
+    font-size: 12px;
+}
+
+/*33c*/
+.cont-mes-right>div:nth-of-type(2) span:nth-of-type(1){
+    margin-right: -9px;
+}
+
+/*SOLAR IRRADIANCE*/
+.cont-mes-right>div:nth-of-type(4)>div span:nth-of-type(2){
+    margin-right: 3px;
+    margin-left: 16px;
+}
+
+/*CLOUD COVER*/
+.cont-mes-right>div:nth-of-type(6){
+    margin-right: 9px;
+}
+.cont-mes-right>div:nth-of-type(6)>div span:nth-of-type(2){
+    margin-right: 5px;
+    margin-left: 16px;
+}
+
+/*message right*/
+
+/*END cont-mes*/
+
+
+/*START cont-chart*/
+.content .cont-chart{
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+}
+
+/*chart-left and chart-right part*/
+.content .chart-left>div, .content .chart-right>div{
+    border: 1px solid #e7ebee;
+}
+
+.content .chart-left{
+}
+.chart-left>div{
+    padding: 48px 0 36px 0;
+}
+
+
+/*chart-btn*/
+.chart-btn{
+    /*margin-left: 56px;*/
+    margin-left: 65px;
+    width: 53% !important;    
+}
+/*chart and button*/
+.chart-cont{
+    max-width: 310px;
+    height: 219px;
+}
+.chart-cont .chart-dial-plate{
+    position: relative;
+    width: 153px;
+    height: 153px;
+    background: url(../i/admin/icon-panel.png) no-repeat;
+    background-size: 100% 85%;
+    border:1px solid #e6e6e6;
+    border-radius: 50%;
+    margin-left: 69px;
+    margin-bottom:29px;
+    text-align: center;
+}
+.chart-cont .chart-dial-plate .chart-dial-mes{
+    position: absolute;
+    width: 75px;
+    height: 44px;
+    top: 14px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin:auto;
+    text-align: center;
+}
+.chart-cont .chart-dial-plate .chart-dial-mes>span{
+    font-size: 30px;
+    line-height: 30px;
+    color: #43aea8;
+}
+.chart-cont .chart-dial-plate .chart-dial-mes>p{
+    font-size: 14px;
+    line-height: 42px;
+    color: #43aea8;
+}
+/*max-value*/
+.chart-dial-max{
+    position: absolute;
+    right: -10px;
+    bottom: 0;
+    font-size: 12px;
+    line-height: 12px;
+    color: #959595;
+}
+
+/*pointer*/
+.chart-dial-pointer{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -7px;
+    margin-top: -8px;
+    content: "";
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 16px solid #e1e1e1;
+    transform: rotate(0deg) translateY(-60px);
+    transition:all 1s;
+}
+
+/* mes:Electricity generated by solar panels; */
+.chart-mes .chart-mes-1{
+    font-size: 26px;
+    line-height: 26px;
+    color: #959595;
+    padding-top: 13px;
+    margin-left: -4px;
+}
+
+.chart-mes .chart-mes-2>div:first-child{
+    font-size: 48px;
+    line-height: 48px;
+    color: #43aea8;
+    padding-top: 13px;
+}
+/*15h,+1.07%*/
+.chart-mes .chart-mes-2>div{
+    display: inline-block;
+}
+/*+1.07%*/
+.chart-mes .chart-mes-2>div>p:nth-of-type(2){
+    color: #43aea8;
+    margin-top: 3px;
+}
+.chart-mes .chart-mes-2 .text-right{
+    margin-left: 28px;
+    position: relative;
+    top: 2px;
+}
+/*Kllowatts-hours*/
+.chart-mes .chart-mes-2>p{    
+    font-size: 14px;
+    line-height: 14px;
+    color: #43aea8;
+    margin-top: 5px;
+    margin-left: -3px;
+}
+
+/*LATEST POWER,PEAK POWER,kilowatts*/
+.chart-mes .chart-mes-3>div>p:first-child{
+    font-size: 12px;
+    line-height: 12px;
+    margin-top: 37px;
+}
+
+.chart-mes-3>div:nth-of-type(2){
+    position: relative;
+    left: 29px;
+}
+.chart-mes-3>div:nth-of-type(3){
+    position: relative;
+    left: 26px;
+}
+
+.chart-mes-span{
+    margin-top: 8px;
+}
+
+/*4.08*/
+.chart-mes-span span:nth-of-type(1){
+    font-size: 24px;
+    line-height: 24px;
+    color: #43aea8;
+    font-weight: bold;
+}
+/*3:30*/
+.chart-mes-span span:nth-of-type(2){
+    font-size: 12px;
+    line-height: 12px;
+    color: #959595;
+    margin-left: 12px;
+}
+/*%*/
+.chart-mes-span span sub{
+    font-size: 12px;
+    line-height: 12px;
+    padding-left: 11px;
+}
+/*$*/
+.chart-left>div:nth-of-type(3) .chart-mes-span span sub{
+    padding-left: 0;
+}
+
+/*kilowatts*/
+.chart-mes-3>div p:last-child{
+    font-size: 12px;
+    line-height: 12px;
+    color: #43aea8;
+}
+
+/*alert tip*/
+.tipBtn{
+    position: absolute;
+    right: 15px;
+    top: 19px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #dfdfdf;
+    text-align: center;
+    color: #ffffff;
+}
+.tipBtn:after{
+    content: "i";
+    line-height: 30px;
+    font-size: 24px;
+    font-style: italic;
+}
+.tipBtnClick{
+    z-index: 101;
+    background: #515f6b;
+    color: #e7ebee;
+}
+.alertTip{
+    position: absolute;
+    z-index: 100;
+    display: none;
+    top: 10px;
+    right: 10px;
+    max-width: 512px;
+    min-height: 374px;
+    background: #e7ebee;
+    padding-left: 42px;
+    padding-top: 10px;
+    border:1px solid #ffffff;
+}
+
+/*END cont-chart*/
+
+
+/*START alertTip*/
+.alertTip h4{
+    margin-bottom: 33px;
+}
+.alertTip .tipPic{
+    width: 35px;
+    height: 32px;
+    background: url('../i/admin/icon-solar.png');
+    background-size: 100% 100%;
+}
+
+.alertTip .tipCon{
+    margin-left: 40px;
+    font-size: 13px;
+    line-height: 20px;
+}
+.alertTip .tipCon p{
+    margin-bottom: 11px;
+}
+
+/*END alertTip*/
+
+
+
+/*START chart-right*/
+.chart-right>div{
+    padding-left: 26px !important;
+    padding-bottom: 38px;
+}
+.chart-right .chart-r-title{
+    font-size: 26px;
+    line-height: 29px;
+    color: #959595;
+    padding-top: 61px;
+}
+
+.chart-right .chart-r-mes{
+    color: #43aea8;
+}
+/*message:6.12, kllowatts=hours*/
+.chart-right .chart-r-mes p:nth-of-type(1){
+    font-size: 48px;
+    line-height: 48px;
+    margin-top: 33px;
+}
+.chart-right .chart-r-mes p:nth-of-type(2){
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.chart-right .chart-r-info{
+    margin-top: 32px;
+}
+
+/*message:LATEST POWER*/
+.chart-right .chart-r-info>div>p{
+    font-size: 12px;
+    line-height: 12px;
+    color: #959595;
+    padding-bottom: 8px;
+}
+/*3.08*/
+.chart-right .chart-r-info>div{
+    font-size: 24px;
+    line-height: 24px;
+    color: #43aea8;
+    padding-right: 12px;
+}
+/*8.21*/
+.chart-right .chart-r-info>div:nth-of-type(2){
+}
+/*3:30pm*/
+.chart-right .chart-r-info>div>div>span{
+    font-size: 12px;
+    line-height: 12px;
+    color: #959595;
+}
+/*kllowatts*/
+.chart-right .chart-r-info div:nth-of-type(3){
+    font-size: 12px;
+    line-height: 12px;
+    color: #43aea8;
+    margin-bottom: 46px;
+}
+
+/*END chart-right*/
+
+.linkBtn{
+    width: 62.213740%;
+    height: 37px;
+    background: #f79433;
+    border-radius: 3px;
+    color: #ffffff;
+    font-size: 14px;
+    display: inline-block;
+    text-align: center;
+    line-height: 37px;
+}
+
+.phone-bar {
+    position: fixed;
+    z-index: 101;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 94px;
+    background: #244259;
+    display: none;
+}
+.phone-bar ul li{
+    float: left;
+    text-align: center;
+    border-top: 4px solid #244259;
+    padding-top: 8px;
+    height: 94px;
+}
+.phone-bar ul li p{
+    font-size: 18px;
+    line-height: 18px;
+    color: #92a1ac;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 12px;
+}
+.phone-bar-active{
+    border-top-color: #0bf26d !important;
+}
+.phone-bar-active p{
+    color: #ffffff !important;
+}
+
+
+@media screen and (max-width: 750px) {
+    header{
+        height: 98px;
+        padding: 0 20px;
+    }
+    header .head-date{
+        right: 61px;
+    }
+    .content{
+        padding: 0 10px;
+    }
+    header>ul{
+        display: none;
+    }
+    .cont-chart>div:last-child{
+        padding-bottom: 75px;
+    }
+    .phone-bar{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .content .cont-mes .con-title{
+        font-size: 29px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .mes-info{
+        width: 73px;
+        margin-left: 1px;
+        text-align: left;
+    }
+    .mes-info>div{
+        font-size: 12px;
+    }
+    .content .cont-mes .cont-mes-right{
+        padding-top: 0;
+    }
+    .content .cont-mes .cont-mes-right>div:nth-of-type(2){
+        font-size: 33px;
+    }
+    .content .cont-mes .cont-mes-right>div:nth-of-type(1){
+        width: 40px;
+        margin-right: 0;
+    }
+    .line{
+        margin: 0;
+    }
+    .mes-info>p{
+        text-align: left;
+    }
+    .cont-mes-right>div:nth-of-type(6){
+        margin-right: 0;
+    }
+    .cont-mes-right>div:nth-of-type(7){
+        margin: 0;
+    }
+    .cont-mes-right>div:nth-of-type(4)>div span:nth-of-type(2){
+        margin-left: 0px;
+        margin-right: 5px;
+    }
+
+    .chart-cont .chart-dial-plate{
+        width: 120px;
+        height: 120px;
+        margin-left: 0;
+        margin-bottom: 18px;
+    }
+    .chart-mes .chart-mes-1{
+        font-size: 18px;
+    }
+    .chart-mes .chart-mes-2>div:first-child,
+    .chart-right .chart-r-mes p:nth-of-type(1){
+        font-size: 37px;
+    }
+    .chart-mes-3>div:nth-of-type(2),
+    .chart-mes-3>div:nth-of-type(3){
+        left: 0;
+    }
+    .chart-btn{
+        width: 59% !important;
+    }
+    .linkBtn{
+        margin-left: 20px;
+        font-size: 12px;
+    }
+    .chart-right .chart-r-title{
+        height: 120px;
+        font-size: 18px;
+        line-height: 18px;
+    }
+    .chart-right .chart-r-info{
+        margin-top: 18px;
+    }
+    .chart-right>div{
+        padding-bottom: 0;
+    }
+    .chart-dial-pointer{
+        transform:rotate(0deg) translateY(50deg);
+    }
+    .phone-bar,
+    .phone-bar ul li{
+        height: 75px;
+    }
+    .phone-bar ul li p{
+        font-size: 12px;
+    }
+    .content .cont-mes .cont-mes-right>div:nth-of-type(2) sub{
+        font-size: 16px;
+    }
+}
